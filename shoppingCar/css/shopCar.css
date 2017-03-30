@@ -1,0 +1,1037 @@
+@charset "utf-8";
+h2, p, ul, input {
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100%;
+	font-size: .4rem;
+	background: #f5f5f5;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, "黑体";
+	overflow-y: auto;
+}
+li {
+	list-style: none;
+}
+/* --取消手机点击屏幕时，会出现的灰块--- */
+html,body{
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	overflow-x: visible;
+}
+/* --取消手机点击屏幕时，会出现的灰块结束----- */
+img {
+	border: none;
+	vertical-align: top;
+}
+.clearFix {
+	zoom: 1;
+}
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+	display: block;
+
+}
+em,i{
+	font-style: normal;
+}
+html {
+	height: 100%;
+	position: relative;
+}
+input[type="text"],input[type="button"]{ -webkit-appearance: none;border-radius: 0;font-family:'microsoft yahei','黑体', Arial, Helvetica, sans-serif;}
+
+/* 清除手机端焦点时闪现的灰色背景条*/
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/* 清除手机端焦点时闪现的灰色背景条*/
+textarea{ resize:none;vertical-align: middle;font-size: .7rem;width:13rem;}
+
+/* --顶部---------------------------------------------------------------------------- */
+.top {
+	width: 18.75rem;
+	height: 2.2rem;
+	background: #ff7f00;
+	margin: 0 auto;
+	position: relative;
+	line-height: 2.2rem;
+}
+
+.top .bar {
+	display: block;
+	width: 0.525rem;
+	height: 0.975rem;
+	background: url(../images/leftangle.png) no-repeat;
+	background-size: 100%;
+	margin-left: 0.75rem;
+	margin-top: 0.5rem;
+}
+
+.z-top p {
+	color: #fff;
+	font-size: 1rem;
+	width: 9.2rem;
+	margin: 0 auto;
+	text-align: center;
+	/*margin-top: 0.575rem;*/
+}
+.top .land {
+	float: right;
+	font-size: .75rem;
+	margin-right: 1.6rem;
+	margin-top: 1.6rem;
+	position: relative;
+	color: #fff;
+}
+.top .downtriangle {
+	position: absolute;
+	top: 1.0rem;
+	right: 0.75rem;
+	width: 1.175rem;
+	height: 0.25rem;
+	background: url(../images/dot.png) no-repeat;
+	background-size: 100%;
+}
+.click-btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 2.2rem;
+	height: 2.2rem;
+}
+.edit{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 2.2rem;
+	height: 2.2rem;
+	text-align: center;
+	font-size: 0.85rem;
+	color: #FFFFFF;
+	padding-right: 0.5rem;
+}
+/* --顶部结束---------------------------------------------------------------------------- */
+
+/* --楼层一样式-- */
+.shop-group-warp{
+	width: 18.75rem;
+	margin: 0 auto;
+}
+.shop-group-item{
+	margin-top: 0.5rem;
+	border-top: 1px solid #e0e0e0;
+	/*border-bottom: 1px solid #e0e0e0;*/
+	background: #fff;
+
+}
+.shop-car-title{
+	height: 2.2rem;
+	line-height: 2.2rem;
+	background: #F6F6F6;
+	padding-left: 0.625rem;
+}
+ .ico-mark{
+	float: left;
+	height: 0.85rem;
+	width: 0.85rem;
+	background: url(../images/huise.png) no-repeat;
+	background-size: 100%;
+	margin-top: 0.65rem;
+	
+}
+.ico-check{
+	float: left;
+	height: 0.85rem;
+	width: 0.85rem;
+	background: url(../images/liangse.png) no-repeat;
+	background-size: 100%;
+	margin-top: 2.0rem;
+}
+.ico-check1{
+	float: left;
+	height: 0.85rem;
+	width: 0.85rem;
+	background: url(../images/liangse.png) no-repeat;
+	background-size: 100%;
+	margin-top: 0.65rem;
+}
+.shop-name-warp{
+	float: left;
+	margin-left: 0.625rem;
+
+}
+.shop-logo{
+	float: left;
+	width: 0.7rem;
+	height:0.7rem;
+	background: url(../images/shangdian.png)  no-repeat;
+	background-size: 100%;
+    margin-top: 0.75rem;
+}
+.seller-right{
+	float: left;
+	margin-left: 0.25rem;
+	font-size: 0.7rem;
+	color: #3D3D3D;
+	background: url(../images/shop-point.png) no-repeat;
+    background-size: 0.5rem 0.5rem;
+    background-position: right .8rem;
+    padding-right: 15px;
+    position: relative;
+}
+/*.s-point{
+	float: left;
+	width:0.6rem;
+	height: 0.6rem;
+	background: url(../images/shop-point.png);
+	background-size: 100%;
+	margin-top: 0.8rem;
+	margin-left: 0.2rem;
+}*/
+.rightA{
+	float: left;
+}
+
+.shopico-mark{
+	float: left;
+	width: 0.85rem;
+	height:0.85rem;
+	background: url(../images/huise.png)  no-repeat;
+	background-size: 100%;
+	margin-top: 2.0rem;
+}
+.shop-car-list li{
+	padding: 0.75rem 0 0.75rem 0.625rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+.shop-car-list .title-shop{
+	padding: 0;
+	border-bottom: none;
+}
+.right-con{
+	float: left;
+	margin-left: 0.625rem;
+}
+.img-warp{
+	/*border: 1px solid #e0e0e0;*/
+	float: left;
+}
+.img-warp img{
+	width: 4.9rem;
+	height: 4.9rem;
+	border: 1px solid #e0e0e0;
+}
+.pro-describe{
+	float: left;
+	width: 11rem;
+	margin-left: 0.5rem;
+}
+
+.production-name{
+	width: 9.9rem;
+
+	line-height: 0.9rem;
+	font-size: 0.65rem;
+	color: #3D3D3D;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+}
+.production-name a{
+	width: 9.9rem;
+	display: block;
+	
+}
+.purchase-to{
+	margin-top: 0.2rem;
+}
+.group-purchase{
+	float: left;
+    width: 1.5rem;
+    height: 0.7rem;
+    background: #FF8500;
+    font-size: 0.6rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.7rem;
+    border-radius: 2px;
+}
+ .limit-num{
+	float: right;
+	margin-right: 0.5rem;
+	font-size: 0.6rem;
+	color: #B0B0B0;
+
+ }
+.bottom-warp{
+	margin-top: 0.1rem;
+	line-height: 1.2rem;
+}
+.bottom-warp .product-price{
+	float: left;
+	font-size: 0.8rem;
+	color: #FF8500;
+	height: 1.1rem;
+}
+.add-word{
+	margin-top: 0.125rem;
+	display: block;
+	width: 10rem;
+	height: 0.85rem;
+	line-height: 0.85rem;
+	font-size: 0.6rem;
+	color: #B0B0B0;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	white-space: nowrap; 
+}
+.quantity-wrapper{
+	float: right;
+	margin-right: 0.5rem;
+}
+.minus{
+	width: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	float: left;
+	font-size: 0.4rem;
+	background: url(../images/minus-prey.png) no-repeat;
+	background-size: 100%;
+}
+.black-minus{
+	width: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	float: left;
+	font-size: 0.4rem;
+	background: url(../images/minus.png) no-repeat;
+	background-size: 100%;
+}
+
+.mid-num{
+	float: left;
+    font-size: 0.7rem;
+    text-align: center;
+	border: solid #e0e0e0;
+    border-width: 1px 0 1px 0;
+    height: 1.2rem;
+    line-height:1.2rem;
+    width: 2.0rem;
+    border-radius: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+
+.plus{
+	width: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	float: left;
+	font-size: 0.4rem;
+	background: url(../images/plus.png) no-repeat;
+	background-size: 100%;
+}
+/* --楼层一样式结束-- */
+
+/* --楼层二样式-- */
+.full-send-warp{
+	padding: 0.75rem 0 0 0.625rem;
+	
+}
+.full-send-warp p{
+	float: left;
+	width: 12.6rem;
+	line-height: 0.825rem;
+	margin-left: 0.3rem;
+	font-size: 0.6rem;
+	color: #3D3D3D;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	word-break: break-all;
+	overflow: hidden;
+}
+.go-warp{
+	float: left;
+	margin-left: 0.625rem;
+	font-size: 0.6rem;
+	color: #FF3B00;
+	position: relative;
+}
+.right-ico{
+	position: absolute;
+	right: -.8rem;
+	top: 0.12rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../images/enter.png) no-repeat;
+	background-size: 100%;
+}
+.fullsend-mes{
+	padding-top: 1.8rem;
+}
+.mid-con{
+	float: left;
+	width: 12.6rem;
+}
+.mid-con p{
+	display: block;
+}
+/* --楼层二样式-结束- */
+
+/* --楼层三样式-- */
+.item3 .fullsend{
+	border: 1px solid #FF8500;
+	background: #fff;
+	color: #FF8500;
+}
+.limit-con{
+	float: left;
+	margin-left: 0.4rem;
+	width: 7.5rem;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	white-space: nowrap; 
+}
+/* --楼层三样式结束-- */
+
+/* --楼层四样式-- */
+.item4 .go-warp{
+	float: right;
+	margin-right: 1.5rem;
+}
+.item4 .go-warp .right-ico{
+	top: 0.75rem;
+}
+
+.item4-bottom-warp{
+	padding-top: 2.75rem;
+}
+.sold-out-bx{
+	float: left;
+	background: #B0B0B0;
+	color: #fff;
+	border-radius: 0.2rem;
+	margin-top: 1.25rem;
+}
+.sold-out-bx .sold-out{
+	float:right;
+	width:1.1rem;
+	padding: 0.2rem 0;
+	font-size: 0.65rem;
+	color: #EEEEEE;
+	line-height: 0.7rem;
+	word-wrap:break-word;
+	word-break:nomal;
+	text-align: center;
+
+}
+.sold-out-warp .right-con{
+	margin-left: 0.375rem;
+}
+
+.sold-out-warp a .production-name {
+	color: #B0B0B0;
+}
+.sold-out-warp .bottom-warp{
+	padding-top: 1.1rem;
+}
+.sold-out-warp .bottom-warp .product-price{
+	color: #B0B0B0;
+}
+/* --楼层四样式结束-- */
+
+/* --固定底部-- */
+.payment-total-bar{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.fix-warp{
+	position: fixed;
+	bottom: 0;
+	width: 18.75rem;
+	margin:0 auto;
+	height: 2.45rem;
+	border-top: 1px solid #e0e0e0;
+	background: #fff;
+	z-index: 99;
+}
+.shp-chk{
+	display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    margin-left: 0.625rem;
+    padding-top: .2rem;
+}
+.cart-checkbox-text{
+	float: left;
+	padding-left: 0.3rem;
+	padding-top: .7rem;
+	font-size: 0.6rem;
+	color: #3D3D3D;
+}
+.shp-cart-info{
+	display: block;
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+	padding-top: 0.25rem;
+
+}
+.shp-cart-info .total-info,.all-pri{
+	display: block;
+}
+.shp-cart-info .total-info{
+	height: 1.05rem;
+	line-height: 1.05rem;
+	font-size: 0.7rem;
+	color: #3D3D3D;
+
+}
+.shp-cart-info .bottom-bar-price{
+	font-size: 0.75rem;
+}
+
+.shp-cart-info .all-pri{
+	margin-top: 0.1rem;
+	font-size: 0.6rem;
+	color: #3D3D3D;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+
+.btn-right-block{
+	-webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex:2;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+	width:6.25rem;
+	height: 2.45rem;
+	line-height: 2.45rem;
+	background: #FF8500;
+	color: #fff; 
+	text-align: center;
+	font-size: 0.95rem;
+}
+/* --固定底部样式结束-- */
+
+.bottom-block{
+	height: 2.45rem;
+}
+
+/* --店铺活动信息提示样式-- */
+.limit-mes{
+	background: #FFFBF5;
+}
+.limit-mes p{
+	width: 15.5rem;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	font-size: 0.7rem;
+	color: #3D3D3D;
+}
+/* --店铺活动信息提示样式结束-- */
+
+.all-choice-warp .choice-info{
+	-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+}
+.choice-info{
+	padding-left: 2.5rem;
+}
+.choice-info a{
+	float: left;
+	width: 3.2rem;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	text-align: center;
+	margin:0.375rem 0.5rem 0.375rem 0;
+	border: 1px solid #B0B0B0;
+	border-radius: 8px;
+	font-size: 0.65rem;
+	color: #3D3D3D;
+}
+.choice-info .active-del{
+	border: 1px solid #FF8500;
+	color: #FF8500;
+}
+.checks{
+	width: .85rem;
+	height: .85rem;
+	opacity: 0;
+}
+
+/* --商品收藏-- */
+.pro-store{
+	float: right;
+	padding-right: 0.625rem;
+	font-size: 0.65rem;
+	color: #FF8500;
+	margin-top: .1rem;
+}
+.collection-warp{
+	width: 12.5rem;
+}
+.collection-right{
+	margin-left: 0;
+}
+.collection-word{
+	margin-top: 0.36rem;
+}
+/* --商品收藏结束-- */
+
+/* --提示框样式-- */
+.pre-container{
+	position: fixed;
+	top: 12.5rem;
+	left: 5rem;
+	width: 8.1rem;
+	text-align: center;
+	
+}
+.number-alert-floor{
+	background: #000;
+	opacity: .5;
+	position: relative;
+	height: 4.5rem;
+	border-radius: 5px;
+	width: 7.0rem;
+	text-align: center;
+}
+.num-ico{
+	position: absolute;
+	top: .6rem;
+	left: 2.4rem;
+	width: 2.0rem;
+	height: 2.0rem;
+	background-size: 100%;
+}
+
+.number-alert-floor p{
+	color: #fff;
+	font-size: 0.75rem;
+	position: relative;
+	top: 2.9rem;
+}
+
+.number-alert-floor2{
+	background: #000;
+	opacity: .5;
+	width: 16.45rem;
+	height: 2.45rem;
+	line-height: 2.45rem;
+	border-radius: 5px;
+	text-align: center;
+}
+.number-alert-floor2 p{
+	color: #fff;
+	font-size: 0.75rem;
+}
+.number-alert-floor3{
+	background: #000;
+	opacity: .5;
+	width: 10.25rem;
+	height: 2.45rem;
+	line-height: 2.45rem;
+	border-radius: 5px;
+	text-align: center;
+}
+.number-alert-floor3 p{
+	color: #fff;
+	font-size: 0.75rem;
+}
+
+
+/* --提示框样式结束-- */
+
+/* --分享-- */
+.share-bottom-warp{
+	padding-top: 2.2rem;
+}
+.share-page-warp{
+	margin-left: 0;
+}
+.limte-time-price{
+	width: 2.95rem;
+}
+/* --分享结束-- */
+
+/* --（删除 收藏 ）弹出框样式-- */
+.alert-choice{
+	position: fixed;
+	bottom:-110px;
+	width: 18.75rem;
+	z-index: 999;
+	transition: .5s;
+	visibility: hidden;
+}
+.showway{
+	bottom:0;
+	transition: .5s;
+	opacity:1;
+	visibility: visible;
+}
+
+.alert-choice .choice-list{
+	width:17.5rem;
+	margin: 0 auto;
+	background:#fff;
+	border-radius: 0.5rem;
+}
+.alert-choice .choice-list li{
+	height: 2.425rem;
+	line-height: 2.425rem;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
+.alert-choice .choice-list li:last-of-type{
+	border-bottom:none;
+}
+.alert-choice .choice-list li a{
+	font-size: 1.0rem;
+	color: #007AFF;
+}
+.alert-choice .choice-list li .pre-col{
+	font-size: 1.0rem;
+	color: #3D3D3D;
+}
+.cancle{
+	height: 2.425rem;
+	line-height: 2.425rem;
+	text-align: center;
+}
+.cancle a{
+	width:17.5rem;
+	margin: 0 auto;
+	background:#fff;
+	border-radius: 0.5rem;
+	margin-top: 0.125rem;
+	font-size: 1.0rem;
+	color: #007AFF;
+}
+/* --（删除 收藏 ）弹出框样式结束-- */
+
+/* --遮罩层-- */
+
+.mark{
+	position: fixed;
+	top:0;
+	width: 18.75rem;
+	height: 100%;
+	opacity: 0.5;
+	background: #191919;
+	z-index: 998;
+	display: none;
+}
+/* --遮罩层结束-- */
+
+/* --优惠券-- */
+.shop-packet-warp{
+	width: 18.75rem;
+	margin: 0 auto;
+	background: #f7f7f7;
+	position: fixed;
+	bottom: 0;
+	z-index: 6666;        
+}
+.shop-packet-head{
+	height: 2.2rem;
+	line-height: 2.2rem;
+	background: #fff;
+	text-align: center;
+	position: relative;
+}
+.shop-packet-head h3{
+	font-size: 0.85rem;
+	color: #3d3d3d;
+	margin-top: 0;
+	font-weight: normal;
+}
+.packet-close{
+	position: absolute;
+	right: 0.95rem;
+	top: 0.7rem;
+	width: 0.75rem;
+	height: 0.75rem;
+	background: url(../images/close.png) no-repeat;
+	background-size: 100%;
+
+}
+/* --------店铺优惠券--------*/
+.shop-coupon-warp{
+	width: 18.75rem;
+	margin:0 auto;
+	/*height: 100%;
+	overflow-y: auto;*/
+}
+.shop-coupon-nav{
+	height: 2.2rem;
+	line-height: 2.2rem;
+	background: #fff;
+	display:box;
+	display:-webkit-box;
+	display:-moz-box;
+	box-sizing:border-box;
+	position: relative;
+} 
+.shop-coupon-nav div{
+	box-sizing:border-box;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	text-align: center;
+	font-size: 0.8rem;
+}
+.shop-coupon-nav .active-coupon{
+	color: #FF8500;
+	letter-spacing: 0;
+	
+}
+.active-line{
+	position: absolute;
+	width: 6.0rem;
+	height: 1px;
+	background: #FF8500;
+	top: 2.15rem;
+	left: 1.3rem;
+	transition: .3s;
+}
+.shop-coupon-content{
+	padding: 0.25rem 0.6rem 0;
+}
+.coupon-list li{
+	padding: 0.25rem 0;
+	display:box;
+	display:-webkit-box;
+	display:-moz-box;
+	box-sizing:border-box;
+	
+}
+
+.coupon-left{
+	box-sizing:border-box;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	width: 6.0rem;
+	height: 5.5rem;
+	background: url(../images/yanse.png) no-repeat;
+	background-size: 100%;
+	
+	position: relative;
+}
+.coupon-left-none{
+	box-sizing:border-box;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	width: 6.0rem;
+	height: 5.5rem;
+	background: url(../images/yanse.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+ .coupon-btn{
+	box-sizing:border-box;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	width: 6.0rem;
+	height: 5.5rem;
+	background: url(../images/preve.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.coupon-right{
+	box-sizing:border-box;
+	-webkit-box-flex:2;
+	-moz-box-flex:2;
+	box-flex:2;
+	width: 11.55rem;
+	height: 5.5rem;
+	background: url(../images/baise.png) no-repeat;
+	background-size: 100%;
+}
+.price-warp{
+	padding-top: 0.95rem;
+}
+.price-warp em{
+	font-size: 0.7rem;
+	position: relative;
+	top: -0.8rem;
+	left: 1.1rem;
+	color: #fff;
+}
+.price-warp i{
+	color: #fff;
+	font-size: 1.8rem;
+	padding-left: 1.3rem;
+}
+.full-price{
+	padding-top: 0.5rem;
+	padding-left: 1.2rem;
+	color: #fff;
+	font-size: 0.6rem;
+}
+.mix{
+	position: absolute;
+	top: 0.25rem;
+	right: 0.4rem;
+	width: 1.75rem;
+	height: 1.75rem;
+	background: url(../images/mix.png) no-repeat;
+	background-size: 100%;
+}
+.mix-date{
+	position: absolute;
+	top: 0.25rem;
+	right: 0.4rem;
+	width: 1.75rem;
+	height: 1.75rem;
+	background: url(../images/date.png) no-repeat;
+	background-size: 100%;
+}
+.shop-name{
+	padding: 0.7rem 0 0 0.5rem;
+	font-size: 0.8rem;
+	color: #3d3d3d;
+}
+.use-date{
+	padding-top: 2.25rem;
+}
+.date-detail{
+	float: left;
+	padding-left: 0.7rem;
+	font-size: 0.6rem;
+	color: #B0B0B0;
+}	
+.use-coupon{
+	float: right;
+	background: #FF8500;
+	border-radius: 2.5rem 0 0 2.5rem;
+	width: 3.45rem;
+	height: 1.45rem;
+	line-height: 1.45rem;
+	text-align: center;
+	margin-top: -.4rem;
+	font-size: 0.7rem;
+	color: #fff;
+	font-weight: normal;
+}
+.use-none{
+	padding-top: 1.4rem;
+}
+.use-none span,strong{
+	display: block;
+}
+.use-none .date-detail{
+	float: none;
+}
+.use-warn{
+	padding-left: 0.7rem;
+	padding-top: 0.1rem;
+	font-size: 0.7rem;
+	color: #74D478;
+	font-weight: normal;
+}
+.shop-coupon-content {
+	display: none;
+}
+
+.active-view{
+	display: block;
+}
+
+
+
+
+
+/* --------店铺优惠券结束---*/
+/* --优惠券结束-- */
+.rolling-warp{
+	width: 100%;
+	height:1rem;
+	position: relative;
+	overflow: hidden;
+}
+.horn-box{
+	position: absolute;
+	left: 0;
+	top: 0.1rem;
+	background: #fff;
+	width:2rem;
+	height: 1.2rem;
+	z-index: 2;
+}
+.horn{
+	display: inline-block;
+	margin-left: .8rem;
+	width:0.9rem;
+	height: 0.9rem;
+	background: url(../images/horn0.png) no-repeat;
+	background-size: 100%;
+}
+
+.horn1{
+	display: inline-block;
+	margin-left: .8rem;
+	width:0.9rem;
+	height: 0.9rem;
+	background: url(../images/horn1.png) no-repeat;
+	background-size: 100%;
+}
+.horn2{
+	display: inline-block;
+	margin-left: .8rem;
+	width:0.9rem;
+	height: 0.9rem;
+	background: url(../images/horn2.png) no-repeat;
+	background-size: 100%;
+}
+
+
+.shop-mess{
+	float: left;
+	
+	margin-top: .15rem;
+	font-size: .6rem;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}

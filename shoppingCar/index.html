@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+     <link href="css/reset_app.css" rel="stylesheet"/>
+     <!-- <link href="css/base.css" rel="stylesheet"/> -->
+    <link href="css/shopCar.css" rel="stylesheet"/>
+    <title>购物车</title>
+    <script>  
+		var iScale=1;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+'" />')
+		</script>
+		<script>
+		document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/18.75+"px";
+	</script>
+	
+</head>
+<body onLoad="moveText()"> 
+
+	<div class="top z-top clearFix">
+		<a href="javascript:void(0);" class="click-btn"><span class="bar"></span></a>
+		<p>购物车</p>
+		<span class="edit" id="edit">编辑</span>
+	</div>
+	<div class="shop-group-warp">
+	<!-- 楼层一-->
+		<div class="shop-group-item"> 	
+			<div class="shop-car-title clearFix">
+				<span class="ico-mark" id="ico-mark"></span>
+				<div class="shop-name-warp clearFix">
+					<span class="shop-logo"></span>
+					<a href="javascript:;" class="rightA clearFix">
+						<div class="seller-right">
+							<div class="seller-name">武穴网上供销社</div>
+						</div>
+						
+					</a>
+				</div>
+			</div>
+			<div class="shop-car-content">
+				<ul class="shop-car-list" id="checked-list">
+					<li>
+						<div class="shop-car-box clearFix">
+							<strong class="shopico-mark">
+								<input type="checkbox" class="checks">
+							</strong>
+							
+							<div class="right-con clearFix">
+								<div class="img-warp">
+									<a href="javascript:;"><img src="images/shop-item.jpg"></a>
+								</div>
+								<div class="pro-describe">
+									<a href="javascript:;">
+										<p class="production-name">
+											新鲜红心柚子 福建平和蜜柚红肉红心蜜柚 单果约2斤左右单果约2斤左右
+										</p>
+									</a>
+									<span class="add-word">这里是重要规格参最大数字数待定</span>
+									<div class="purchase-to clearFix">
+										<span class="group-purchase">团购</span>
+										<span class="limit-num">限5件</span>
+									</div>
+									
+									<div class="bottom-warp clearFix">
+										<span class="product-price">&yen; 2245.90</span>
+										<div class="quantity-wrapper clearFix">
+											
+											<div class="counts-warp clearFix">
+												<span class="minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点 -->
+											<div class="counts-warp clearFix" style="display: none;">
+												<span class="minus black-minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点结束 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- <li class="limit-mes">
+						<p>店铺活动：满99.00减10.00；满199.00</p>
+					</li> -->
+					<li>
+						<div class="shop-car-box clearFix">
+							<strong class="shopico-mark">
+								<input type="checkbox" class="checks">
+							</strong>
+							<div class="right-con clearFix">
+								<div class="img-warp">
+									<a href="javascript:;"><img src="images/shop-item.jpg"></a>
+								</div>
+								<div class="pro-describe">
+									<a href="javascript:;">
+										<p class="production-name">
+											新鲜红心柚子 福建平和蜜柚红肉红心蜜柚 单果约2斤左右单果约2斤左右
+										</p>
+									</a>
+									<span class="add-word">这里是重要规格参最大数字数待定</span>
+									<div class="purchase-to clearFix">
+										<span class="group-purchase">团购</span>
+										<span class="limit-num">限5件</span>
+									</div>
+									
+									<div class="bottom-warp clearFix">
+										<span class="product-price">&yen; 2245.90</span>
+										<div class="quantity-wrapper clearFix">
+											
+											<div class="counts-warp clearFix">
+												<span class="minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点 -->
+											<div class="counts-warp clearFix" style="display: none;">
+												<span class="minus black-minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点结束 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- <li class="limit-mes">
+						<p>限制：限时购商品不参与店铺活动</p>
+					</li> -->
+				</ul>
+			</div>		
+		</div>
+	<!-- 楼层一结束-->
+	<!-- 楼层二-->
+		<div class="shop-group-item item2"> 	
+			<div class="shop-car-title clearFix">
+				<span class="ico-mark ico-active"></span>
+				<div class="shop-name-warp clearFix">
+					<span class="shop-logo"></span>
+					<a href="javascript:;" class="rightA clearFix">
+						<div class="seller-right">
+							<div class="seller-name">武穴网上供销社</div>
+						</div>
+						
+					</a>
+				</div>
+			</div>
+			<div class="shop-car-content">
+				<div class="rolling-warp clearFix" >
+					<div class="horn-box" id="horn-box"><em class="horn"></em></div>
+					<div class="rolling-warp" id="rolling">
+						<em class="shop-mess">
+						全店铺购满20元，可减部分地区包邮。全店铺购满20元，可减1010.00元。部分地区包邮。
+						</em>
+						<em class="shop-mess">
+						全店铺购满20元，可减部分地区包邮。全店铺购满20元，可减1010.00元。部分地区包邮。
+						</em>
+					</div>
+				</div>
+				<a href="javascript:;">
+					<div class="full-send-warp clearFix">
+						<span class="group-purchase fullsend">满送</span>
+						<p>已满89.00元，已减10.00元,赠手套X1，袜子X1，已减10.00元已减10</p>
+						<div class="go-warp clearFix">
+							<span>在逛逛</span>
+							<i class="right-ico"></i>
+						</div>
+					</div>
+				</a>
+				<ul class="shop-car-list">
+					<li>
+						<div class="shop-car-box clearFix">
+							<span class="ico-mark shopico-mark"></span>
+							<div class="right-con clearFix">
+								<div class="img-warp">
+									<a href="javascript:;"><img src="images/shop-item.jpg"></a>
+								</div>
+								<div class="pro-describe">
+									<a href="javascript:;"><p class="production-name">龙林蜂蜜（475gX2）</p></a>
+								
+									<div class="purchase-to fullsend-mes clearFix">
+										
+										<span class="limit-num">限5件</span>
+									</div>
+									
+									<div class="bottom-warp clearFix">
+										<span class="product-price">&yen; 2245.90</span>
+										<div class="quantity-wrapper clearFix">
+											
+											<div class="counts-warp clearFix">
+												<span class="minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点 -->
+											<div class="counts-warp clearFix" style="display: none;">
+												<span class="minus black-minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点结束 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+			</div>		
+		</div>
+	<!-- 楼层二结束-->
+	<!-- 楼层三-->
+		<div class="shop-group-item item3"> 	
+			<div class="shop-car-title clearFix">
+				<span class="ico-mark ico-active"></span>
+				<div class="shop-name-warp clearFix">
+					<span class="shop-logo"></span>
+					<a href="javascript:;" class="rightA clearFix">
+						<div class="seller-right">
+							<div class="seller-name">武穴网上供销社</div>
+						</div>
+						
+					</a>
+				</div>
+			</div>
+			<div class="shop-car-content">
+				<a href="javascript:;">
+					<div class="full-send-warp clearFix">
+						<span class="group-purchase fullsend">满送</span>
+						<div class="mid-con">
+							<p>购满99.00元可减10.00元，还差10.00元。</p>
+							<p>购满99.00元可减10.00元，还差10.00元。</p>
+						</div>
+						<div class="go-warp clearFix">
+							<span>去凑单</span>
+							<i class="right-ico"></i>
+						</div>
+					</div>
+				</a>
+				<ul class="shop-car-list">
+					<li>
+						<div class="shop-car-box clearFix">
+							<span class="ico-mark shopico-mark"></span>
+							<div class="right-con clearFix">
+								<div class="img-warp">
+									<a href="javascript:;"><img src="images/shop-item.jpg"></a>
+								</div>
+								<div class="pro-describe">
+									<a href="javascript:;"><p class="production-name">龙林蜂蜜（475gX2）</p></a>
+								
+									<div class="purchase-to fullsend-mes clearFix">
+										
+										<span class="limit-num">限5件</span>
+									</div>
+									
+									<div class="bottom-warp clearFix">
+										<span class="product-price">&yen; 2245.90</span>
+										<div class="quantity-wrapper clearFix">
+											
+											<div class="counts-warp clearFix">
+												<span class="minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点 -->
+											<div class="counts-warp clearFix" style="display: none;">
+												<span class="minus black-minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点结束 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+			</div>		
+		</div>
+	<!-- 楼层三结束-->
+	<!-- 楼层四-->
+		<div class="shop-group-item item4"> 	
+    			<div class="shop-car-title clearFix">
+				<span class="ico-mark ico-active"></span>
+				<div class="shop-name-warp clearFix">
+					<span class="shop-logo"></span>
+					<a href="javascript:;" class="rightA clearFix">
+						<div class="seller-right">
+							<div class="seller-name">赤峰农产品商城</div>
+						</div>
+						
+					</a>
+				</div>
+				<a href="javascript:;">
+					<div class="go-warp clearFix">
+						<span id="T-coupon">去领劵</span>
+						<i class="right-ico"></i>
+					</div>
+				</a>
+			</div>
+			<div class="shop-car-content" >	
+				<ul class="shop-car-list">
+					<li>
+						<div class="shop-car-box clearFix">
+							<span class="ico-mark shopico-mark"></span>
+							<div class="right-con clearFix">
+								<div class="img-warp">
+									<a href="javascript:;"><img src="images/shop-item.jpg"></a>
+								</div>
+								<div class="pro-describe">
+									<a href="javascript:;"><p class="production-name">龙林蜂蜜（475gX2）</p></a>
+									<div class="bottom-warp item4-bottom-warp clearFix">
+										<span class="product-price">&yen; 2245.90</span>
+										<div class="quantity-wrapper clearFix">
+											
+											<div class="counts-warp clearFix">
+												<span class="minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点 -->
+											<div class="counts-warp clearFix" style="display: none;">
+												<span class="minus black-minus"><em></em></span>
+												<input type="" name="" value="1" class="mid-num">
+												<span class="plus"><em></em></span>
+											</div>
+											<!--减号可点结束 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="shop-car-box sold-out-warp clearFix">
+							<div class="sold-out-bx"><span class="sold-out">已售馨</span></div>
+							<div class="right-con clearFix">
+								<div class="img-warp">
+									<a href="javascript:;"><img src="images/shop-item.jpg"></a>
+								</div>
+								<div class="pro-describe">
+									<a href="javascript:;">
+										<p class="production-name">
+											新鲜红心柚子 福建平和蜜柚红肉红心蜜柚 单果约2斤左右单果约2斤左右
+										</p>
+									</a>
+									<span class="add-word">这里是重要规格参最大数字数待定</span>
+								
+									
+									<div class="bottom-warp clearFix">
+										<span class="product-price">&yen; 2245.90</span>
+									
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="shop-car-box sold-out-warp clearFix">
+							<div class="sold-out-bx"><span class="sold-out">已下架</span></div>
+							<div class="right-con clearFix">
+								<div class="img-warp">
+									<a href="javascript:;"><img src="images/shop-item.jpg"></a>
+								</div>
+								<div class="pro-describe">
+									<a href="javascript:;">
+										<p class="production-name">
+											新鲜红心柚子 福建平和蜜柚红肉红心蜜柚 单果约2斤左右单果约2斤左右
+										</p>
+									</a>
+									<span class="add-word">这里是重要规格参最大数字数待定</span>
+								
+									
+									<div class="bottom-warp clearFix">
+										<span class="product-price">&yen; 2245.90</span>
+									
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="shop-packet-warp" style="display: none;">
+				<div class="shop-packet-head">
+					<h3>优惠劵</h3>
+					<span class="packet-close" id="close-btn"></span>
+				</div>
+				<div class="shop-coupon-warp ">
+					<div class="shop-coupon-content active-view" id="use-btn">
+						<ul class="coupon-list">
+							<li>
+								<div class="coupon-left">
+									<div class="price-warp">
+										<em>&yen;</em>
+										<i>20</i>
+									</div>
+									<div class="full-price">满100元可用</div>
+									<span class="mix"></span>
+								</div>
+								<div class="coupon-right">
+									<div class="shop-name">承德土特产,全店通用</div>
+									<div class="use-date clearFix">
+										<span class="date-detail">有效期至：2016.11.16</span>
+										<a href="javascript:;"><strong class="use-coupon">点击领取</strong></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="coupon-left ">
+									<div class="price-warp">
+										<em>&yen;</em>
+										<i>20</i>
+									</div>
+									<div class="full-price">满100元可用</div>
+									<span class="mix-date"></span>
+								</div>
+								<div class="coupon-right">
+									<div class="shop-name">承德土特产,全店通用</div>
+									<div class="use-date clearFix">
+										<span class="date-detail">有效期至：2016.11.16</span>
+										<a href="javascript:;"><strong class="use-coupon">点击领取</strong></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="coupon-left">
+									<div class="price-warp">
+										<em>&yen;</em>
+										<i>20</i>
+									</div>
+									<div class="full-price">满100元可用</div>
+									<!-- <span class="mix"></span> -->
+								</div>
+								<div class="coupon-right">
+									<div class="shop-name">承德土特产,全店通用</div>
+									<div class="use-date clearFix">
+										<span class="date-detail">有效期至：2016.11.16</span>
+										<a href="javascript:;"><strong class="use-coupon">点击领取</strong></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>		
+		</div>
+	<!-- 楼层四结束-->	
+	</div>
+	<div class="bottom-block"></div>
+	<div class="fix-warp">
+		<div class="payment-total-bar" >
+			<div class="shp-chk clearFix">
+	            <span class="ico-mark "></span>
+	            <span class="cart-checkbox-text">全选</span>
+	        </div>
+	        <div class="shp-cart-info shp-cart-info-new  box-flex-c">
+	            <strong class="total-info">合计:<span class="bottom-bar-price" >&yen;20394.00</span></strong>
+	            <span class="all-pri">总额：<span class="money-unit-bf" >&yen;20394.00</span>立减：<span class="money-unit-bf" >&yen;20</span></span>
+	        </div>
+	        <a class="btn-right-block" >去结算<span>(0)</span></a>
+		</div>
+	</div>
+	<div class="fix-warp" style="display: none;">
+		<div class="payment-total-bar all-choice-warp" >
+			<div class="shp-chk clearFix">
+	            <span class="ico-mark "></span>
+	            <span class="cart-checkbox-text">全选</span>
+	        </div>
+	        <div class="choice-info clearFix">
+	        	<a href="javascript:;" id="collect">收藏</a>
+	        	<a href="javascript:;" class="active-del" id="move">删除</a>
+	        </div>
+		</div>
+	</div>
+	<!-- 隐藏的提示框-->
+	<div class="alert-choice alert-choice-order" id="show">
+		<ul class="choice-list">
+			<li><a href="javascript:;" class="pre-col">确认要将1种商品删除？</a></li>
+			<li><a href="selfchoice.html">确定</a></li>
+		</ul>
+		<div class="cancle">
+			<a href="javascript:;" id="cancles">取消</a>
+		</div>
+	</div>
+	<!-- 隐藏的提示框-->
+		
+	<!-- 弹窗-->
+	<div class="mark"></div>
+	<!-- 弹窗-->
+	 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	
+	 <script src="js/index.js"></script>
+	 
+	
+</body>
+
+</html>

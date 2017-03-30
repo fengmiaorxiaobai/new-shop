@@ -1,0 +1,383 @@
+@charset "utf-8";
+h2, p, ul, input {
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100%;
+	font-size: .4rem;
+	background: #f5f5f5;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, "黑体";
+	overflow-y: auto;
+}
+li {
+	list-style: none;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+.clearFix {
+	zoom: 1;
+}
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+	display: block;
+}
+em,i{
+	font-style: normal;
+}
+html {
+	height: 100%;
+	position: relative;
+}
+/* --取消手机点击屏幕时，会出现的灰块--- */
+html,body{
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	overflow-x: visible;
+}
+/* --取消手机点击屏幕时，会出现的灰块结束----- */
+input[type="text"],input[type="button"]{ -webkit-appearance: none;border-radius: 0;font-family:'microsoft yahei','黑体', Arial, Helvetica, sans-serif;}
+
+/* 清除手机端焦点时闪现的灰色背景条*/
+input{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/* 清除手机端焦点时闪现的灰色背景条*/
+textarea{ resize:none;vertical-align: middle;font-size: .7rem;width:13rem;}
+
+/* --顶部---------------------------------------------------------------------------- */
+.top {
+	width: 18.75rem;
+	height: 2.2rem;
+	background: #ff7f00;
+	margin: 0 auto;
+	position: relative;
+	line-height: 2.2rem;
+}
+
+/*.top .triangle{float:left;width:0.525rem;height:0.975rem;background:url(../images/leftriangle.png) no-repeat;background-size:100%;margin-left: 0.75rem;margin-top:0.575rem;}*/
+.top .bar {
+	display: block;
+	width: 0.525rem;
+	height: 0.975rem;
+	background: url(../images/leftangle.png) no-repeat;
+	background-size: 100%;
+	margin-left: 0.75rem;
+	margin-top: 0.5rem;
+}
+
+.z-top p {
+	color: #fff;
+	font-size: 1rem;
+	width: 9.2rem;
+	margin: 0 auto;
+	text-align: center;
+	/*margin-top: 0.575rem;*/
+}
+.top .land {
+	float: right;
+	font-size: .75rem;
+	margin-right: 1.6rem;
+	margin-top: 1.6rem;
+	position: relative;
+	color: #fff;
+}
+.top .downtriangle {
+	position: absolute;
+	top: 1.0rem;
+	right: 0.75rem;
+	width: 1.175rem;
+	height: 0.25rem;
+	background: url(../images/dot.png) no-repeat;
+	background-size: 100%;
+}
+.click-btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 2.2rem;
+	height: 2.2rem;
+}
+.top .sorts {
+    float: right;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: url(../images/sorts.png) no-repeat;
+    background-size: 100%;
+    margin-right: 0.625rem;
+    margin-top: .6rem;
+}
+.top .sorts-change {
+    float: right;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: url(../images/sorts-change.png) no-repeat;
+    background-size: 100%;
+    margin-right: 0.625rem;
+    margin-top: .6rem;
+}
+/* --顶部结束---------------------------------------------------------------------------- */
+
+
+/* --更多优惠---------------------------------------------------------------------------- */
+.all-number{
+	float: right;
+	font-size: 0.9rem;
+	color: #fff;
+	margin-right: 0.65rem;
+}
+.shop-item{
+	width: 18.75rem;
+	margin: 0 auto;
+	
+}
+.item-left{
+	float: left;
+	width: 4.95rem;
+}
+.item-list{
+	padding: 0.5rem 0 0.5rem 0.625rem;
+	margin-bottom: 0.25rem;
+	background: #fff;
+}
+.item-left img{
+	width: 4.9rem;
+	height: 4.9rem;
+	border: 1px solid #eeeeee;
+}
+.item-right{
+	float: left;
+	width:12.15rem;
+	margin-left: 1.0rem;
+}
+.itm-word{
+	width: 10.85rem;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2; 
+	line-height: 1.0rem;
+	font-size: 0.75rem;
+	padding-top: 0.375rem;
+	color: #3d3d3d;
+}
+.itm-bottom{
+	margin-top: 1.75rem;
+}
+.itm-bottom span:first-of-type{
+	font-size: 0.65rem;
+	color: #003700;
+	color: #ff8500;
+	float: left;
+}
+.itm-bottom span:last-of-type{
+	font-size: 0.65rem;
+	float: left;
+	margin-right: 0.65rem;
+	margin-top: .3rem;
+}
+
+
+.benefit-warp{
+	width: 18.75rem;
+	margin:0 auto;
+	background: #FFFFFF;
+	margin-bottom: 0.25rem;
+	
+}
+.benefit-box{
+	padding: 0.5rem 0.45rem 0 0.625rem;
+}
+.benefit-box p{
+	font-size: 0.7rem;
+	color: #3D3D3D;
+	padding-bottom: 0.5rem;
+}
+
+/*.shop-item-block{
+	margin-top:2.65rem ;
+}*/
+.shop-item-list{
+	display:box;
+	display:-webkit-box;
+	display:-moz-box;
+	box-sizing:border-box;
+	margin-bottom: 0.25rem;
+}
+.shop-item-list li{
+	box-sizing:border-box;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	text-align: center;
+	background: #FFFFFF;
+	margin-right: 0.25rem;
+
+}
+.shop-item-list .df-item{
+	margin-right: 0;
+}
+.shop-item-list li img{
+	width: 6.0rem;
+	height: 6.4rem;
+	padding: 1.0rem 1.65rem 1.0rem 1.6rem;
+}
+.item-message{
+	display: inline-block;
+	font-size: 0.7rem;
+	color: #3D3D3D;
+	padding:0.25rem 1.0rem 0 0.625rem;
+	text-align: left;
+	width: 7.625rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.shop-item-list .itm-price{
+	display:block;
+	font-size: 0.65rem;
+	text-align: left;
+	margin-left: 0.625rem;
+	color: #ff8500;
+	padding: 0.5rem 0;
+}
+
+/* --更多优惠结束---------------------------------------------------------------------------- */
+
+/*.top-block{
+	height:2.65rem; 
+}*/
+.menue
+{
+    width: 18.75rem;
+    height: 2.375rem;
+    margin: 0 auto;
+    background: #fff;
+ 	margin-bottom: 0.25rem;
+
+}
+.menue .menue-list
+{
+    display:         box;
+    display: -webkit-box;
+    display:    -moz-box;
+
+    box-sizing: border-box;
+}
+.menue .menue-list li
+{
+    font-size: .75rem;
+    line-height: 2.375rem;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+            box-flex: 1;
+}
+.menue .menue-list li a
+{
+    color: #3d3d3d;
+	font-size: 0.9rem;
+	position: relative;
+
+}
+.menue .menue-list .active-col{
+	color: #FF8500;
+}
+.menue .menue-list .menue-triangle
+{
+    position: absolute;
+    top: 1.05rem;
+    left: 2.2rem;
+    width: 0;
+    height: 0;
+    border-top: .3rem solid #ff7f00;
+    border-right: .2rem solid transparent;
+    border-left: .2rem solid transparent;
+}
+
+
+.menue .menue-list .bottom-triangle
+{
+    position: absolute;
+    top: 1.25rem;
+    left: 4.1rem;
+
+    width: 0;
+    height: 0;
+
+    border-top: .2rem solid #b0b0b0;
+    border-right: .2rem solid transparent;
+    border-left: .2rem solid transparent;
+}
+.menue .menue-list .bottom-triangle-change
+{
+    position: absolute;
+    top: 1.25rem;
+    left: 4.1rem;
+
+    width: 0;
+    height: 0;
+
+    border-top: .2rem solid #FF8500;
+    border-right: .2rem solid transparent;
+    border-left: .2rem solid transparent;
+}
+.menue .menue-list .top-triangle
+{
+    position: absolute;
+    top: .9rem;
+    left: 4.1rem;
+
+    width: 0;
+    height: 0;
+
+    border-right: .2rem solid transparent;
+    border-bottom: .2rem solid #b0b0b0;
+    border-left: .2rem solid transparent;
+}
+
+.menue .menue-list .top-triangle-change
+{
+    position: absolute;
+    top: .9rem;
+    left: 4.1rem;
+
+    width: 0;
+    height: 0;
+
+    border-right: .2rem solid transparent;
+    border-bottom: .2rem solid #FF8500;
+    border-left: .2rem solid transparent;
+}
+.menue .menue-list .chece
+{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+	
